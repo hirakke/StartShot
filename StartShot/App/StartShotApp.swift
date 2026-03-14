@@ -10,9 +10,12 @@ import SwiftData
 
 @main
 struct StartShotApp: App {
+    @State private var settingsStore = SettingsStore()
+    @State private var dateProvider = AppDateProvider()
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            DailyMissionRecord.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -26,6 +29,8 @@ struct StartShotApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(settingsStore)
+                .environment(dateProvider)
         }
         .modelContainer(sharedModelContainer)
     }

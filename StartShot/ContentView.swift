@@ -1,61 +1,139 @@
-//
-//  ContentView.swift
-//  StartShot
-//
-//  Created by Keiju Hiramoto on 2026/03/05.
-//
-
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Environment(SettingsStore.self) private var settingsStore
+    @Environment(AppDateProvider.self) private var dateProvider
+    @Query(sort: \DailyMissionRecord.targetDate) private var records: [DailyMissionRecord]
+
+    // Root-level UI state only: selected tab and active full-screen flow.
+    @State private var viewModel = RootViewModel()
+
+    private let dateService = DateService.shared
+
+    private var timePolicy: MissionTimePolicy {
+        MissionTimePolicy(dateProvider: dateProvider, dateService: dateService)
+    }
+
+    // One derived snapshot used by both tab contents and flow destinations.
+    private var snapshot: RootMissionSnapshot {
+        RootMissionSnapshot.build(
+            records: records,
+            timePolicy: timePolicy,
+            dateService: dateService
+        )
+    }
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        TabView(selection: $viewModel.selectedTab) {
+            Tab("Home", systemImage: "house.fill", value: .home) {
+                NavigationStack {
+                    HomeView(
+                        homeMissionState: snapshot.homeState,
+                        dailyMissionStatus: snapshot.dailyStatus,
+                        currentStreak: snapshot.currentStreak,
+                        streakMessage: "明日の自分を助けよう",
+                        configuredImagePath: snapshot.configuredImagePath,
+                        beforeImagePath: snapshot.todayRecord?.plannedPhotoPath,
+                        afterImagePath: snapshot.todayRecord?.actualPhotoPath,
+                        onPrimaryAction: {
+                            viewModel.handleHomePrimaryAction(status: snapshot.dailyStatus)
+                        },
+                        onConfiguredImageEdit: {
+                            viewModel.handleConfiguredMissionEdit(
+                                status: snapshot.dailyStatus,
+                                configuredImagePath: snapshot.tomorrowRecord?.plannedPhotoPath
+                            )
+                        }
+                    )
+                    .navigationTitle("Home")
+                    .navigationBarTitleDisplayMode(.automatic)
+                    .toolbar {
+                        ToolbarItem(placement: .automatic) {
+                            Button {
+                                viewModel.showSettings()
+                            } label: {
+                                Image(systemName: "gearshape")
+                            }
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+
+            Tab("Calendar", systemImage: "calendar", value: .calendar) {
+                NavigationStack {
+                    CalendarView()
+                        .navigationTitle("Calendar")
+                        .navigationBarTitleDisplayMode(.automatic)
                 }
             }
-        } detail: {
-            Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+        // Keep the native tab bar style while forcing a full-width bar presentation.
+        .toolbar(.visible, for: .tabBar)
+        .toolbarBackground(.visible, for: .tabBar)
+        .toolbarBackground(.regularMaterial, for: .tabBar)
+        .fullScreenCover(item: $viewModel.activeFlow) { flow in
+            NavigationStack {
+                flowDestination(for: flow, snapshot: snapshot)
+            }
         }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+        .onChange(of: viewModel.activeFlow) { _, newFlow in
+            if newFlow == nil {
+                viewModel.clearTransientState()
             }
         }
     }
-}
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+    @ViewBuilder
+    private func flowDestination(for flow: ActiveFlow, snapshot: RootMissionSnapshot) -> some View {
+        // Camera/setup screens are not tabs; they are modal flows from Home actions.
+        switch flow {
+        case .nightCapture:
+            NightCaptureView(
+                onClose: { viewModel.closeFlow() },
+                onCapture: { image in
+                    viewModel.handleNightCapture(image)
+                }
+            )
+
+        case .nightSetupConfirm:
+            NightSetupConfirmView(
+                capturedImage: viewModel.pendingNightImage,
+                initialMessage: snapshot.nextPlanRecord?.messageForTomorrow ?? settingsStore.selfMessage,
+                initialNotificationHour: snapshot.nextPlanRecord?.notificationHour ?? settingsStore.notificationHour,
+                initialNotificationMinute: snapshot.nextPlanRecord?.notificationMinute ?? settingsStore.notificationMinute,
+                currentDate: timePolicy.now,
+                targetDate: snapshot.nextPlanTargetDate,
+                onClose: { viewModel.closeFlow() },
+                onRetake: { viewModel.retakeNightCapture() },
+                onCompleted: { viewModel.returnHomeAndCloseFlow() }
+            )
+
+        case .morningCapture:
+            MorningCaptureView(
+                plannedImagePath: snapshot.todayRecord?.plannedPhotoPath,
+                missionMessage: snapshot.todayRecord?.messageForTomorrow,
+                onClose: { viewModel.closeFlow() },
+                onGuideToSetup: { viewModel.retakeNightCapture() },
+                onCapture: { image in
+                    viewModel.handleMorningCapture(image)
+                }
+            )
+
+        case .morningStartConfirm:
+            MorningStartConfirmView(
+                plannedImagePath: snapshot.todayRecord?.plannedPhotoPath,
+                storedCompletionImagePath: snapshot.todayRecord?.actualPhotoPath,
+                capturedImage: viewModel.pendingMorningImage,
+                streakValue: snapshot.dailyStatus == .completedToday ? snapshot.currentStreak : snapshot.projectedStreak,
+                isAlreadyCompleted: snapshot.dailyStatus == .completedToday,
+                onClose: { viewModel.closeFlow() },
+                onRetake: { viewModel.retakeMorningCapture() },
+                onCompleted: { viewModel.returnHomeAndCloseFlow() }
+            )
+
+        case .settings:
+            SettingsView()
+        }
+    }
 }
