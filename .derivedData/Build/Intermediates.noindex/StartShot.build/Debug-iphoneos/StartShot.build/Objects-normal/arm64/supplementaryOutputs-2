@@ -1,0 +1,23 @@
+{
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Calendar/CalendarView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/CameraSessionController.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/CustomCameraPreview.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.swiftdeps"
+  }
+}

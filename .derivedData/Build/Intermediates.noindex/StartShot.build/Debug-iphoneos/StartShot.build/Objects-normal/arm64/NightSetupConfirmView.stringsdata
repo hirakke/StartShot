@@ -1,0 +1,144 @@
+{
+  "source": "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/NightSetupConfirmView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "設定！",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "保存できませんでした",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "通知の設定を完了できませんでした",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "設定！",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "この写真を明日のミッションとして保存します",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "通知時間",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "通知時間",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "明日の自分への一言",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "まずはこれから始めよう",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "完了",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "撮り直す",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "戻る",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 189
+        }
+      },
+      {
+        "comment": "",
+        "key": "完了",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 216
+        }
+      },
+      {
+        "comment": "",
+        "key": "ミッション自体は保存済みです。\n%@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 221
+        }
+      },
+      {
+        "comment": "",
+        "key": "撮影画像がありません。",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 258
+        }
+      }
+    ]
+  },
+  "version": 1
+}

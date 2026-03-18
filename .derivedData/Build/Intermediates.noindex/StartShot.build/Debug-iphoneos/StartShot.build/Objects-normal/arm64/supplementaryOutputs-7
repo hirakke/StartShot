@@ -1,0 +1,23 @@
+{
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/DateService.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionLifecycleService.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionTimePolicy.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.swiftdeps"
+  }
+}

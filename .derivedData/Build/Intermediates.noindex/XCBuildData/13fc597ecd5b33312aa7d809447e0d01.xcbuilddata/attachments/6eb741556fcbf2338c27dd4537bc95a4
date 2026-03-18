@@ -1,0 +1,299 @@
+{
+  "" : {
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.dia",
+    "emit-module-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary-emit-module.dia",
+    "pch" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/App/AppTab.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AppTab~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/App/StartShotApp.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Components/StoredImageView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/ContentView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Calendar/CalendarView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/CameraSessionController.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/CustomCameraPreview.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/FullScreenCaptureScaffold.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningCaptureView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningStartConfirmView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/NightCaptureView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/NightSetupConfirmView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Home/HomeView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Root/RootMissionSnapshot.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Root/RootViewModel.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Models/AchievementStatus.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Models/DailyMissionRecord.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/DateProvider.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/DateService.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/DateService~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/HapticFeedback.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/HapticFeedback~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionLifecycleService.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionTimePolicy.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionWriteUseCase.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/NotificationService.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/PhotoFileStore.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/SettingsStore.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore~partial.swiftmodule"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/StreakService.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.dia",
+    "index-unit-output-path" : "/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.swiftdeps",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/StreakService~partial.swiftmodule"
+  }
+}

@@ -1,10 +1,3 @@
-//
-//  StartShotApp.swift
-//  StartShot
-//
-//  Created by Keiju Hiramoto on 2026/03/05.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -31,6 +24,9 @@ struct StartShotApp: App {
             ContentView()
                 .environment(settingsStore)
                 .environment(dateProvider)
+                .onAppear {
+                    HapticFeedback.prepare()
+                }
         }
         .modelContainer(sharedModelContainer)
     }

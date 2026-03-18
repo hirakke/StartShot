@@ -23,7 +23,7 @@ enum MissionWriteUseCase {
         records: [DailyMissionRecord],
         modelContext: ModelContext,
         settingsStore: SettingsStore,
-        dateService: DateService = .shared
+        dateService: DateService
     ) async throws -> NightSetupSaveResult {
         try MissionLifecycleService.upsertPlan(
             for: draft.targetDate,
@@ -56,7 +56,7 @@ enum MissionWriteUseCase {
         records: [DailyMissionRecord],
         modelContext: ModelContext,
         currentDate: Date,
-        dateService: DateService = .shared
+        dateService: DateService
     ) throws {
         if let capturedImage {
             try MissionLifecycleService.completeMorningMission(

@@ -1,0 +1,24 @@
+{
+  "source": "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/NightCaptureView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "撮影できませんでした",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 35
+        }
+      }
+    ]
+  },
+  "version": 1
+}

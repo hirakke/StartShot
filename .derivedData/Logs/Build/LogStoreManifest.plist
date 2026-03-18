@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>A79C1387-63AE-497A-B60B-5930AB7F546E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A79C1387-63AE-497A-B60B-5930AB7F546E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>StartShot project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>StartShot</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project StartShot with scheme StartShot and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>795537970.75738704</real>
+			<key>timeStoppedRecording</key>
+			<real>795537980.18328702</real>
+			<key>title</key>
+			<string>Building project StartShot with scheme StartShot and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>A79C1387-63AE-497A-B60B-5930AB7F546E</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

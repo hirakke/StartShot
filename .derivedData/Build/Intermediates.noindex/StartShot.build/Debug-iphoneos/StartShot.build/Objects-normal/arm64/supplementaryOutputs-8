@@ -1,0 +1,23 @@
+{
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionWriteUseCase.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/NotificationService.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/PhotoFileStore.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.swiftdeps"
+  }
+}

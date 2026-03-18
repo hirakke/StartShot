@@ -1,0 +1,151 @@
+{
+  "" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.dia",
+    "emit-module-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary-emit-module.dia",
+    "pch" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/App/AppTab.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/AppTab.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/App/StartShotApp.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShotApp.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Components/StoredImageView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StoredImageView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/ContentView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Calendar/CalendarView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CalendarView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/CameraSessionController.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CameraSessionController.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/CustomCameraPreview.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/CustomCameraPreview.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/FullScreenCaptureScaffold.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningCaptureView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningStartConfirmView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/NightCaptureView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NightCaptureView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/NightSetupConfirmView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NightSetupConfirmView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Home/HomeView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/HomeView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Root/RootMissionSnapshot.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/RootMissionSnapshot.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Root/RootViewModel.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/RootViewModel.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Settings/SettingsView.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Models/AchievementStatus.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/AchievementStatus.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Models/DailyMissionRecord.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DailyMissionRecord.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/DateProvider.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DateProvider.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/DateService.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DateService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DateService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/DateService.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionLifecycleService.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionLifecycleService.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionTimePolicy.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionTimePolicy.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/MissionWriteUseCase.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/MissionWriteUseCase.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/NotificationService.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/NotificationService.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/PhotoFileStore.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/PhotoFileStore.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/SettingsStore.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/SettingsStore.o"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Services/StreakService.swift" : {
+    "index-unit-output-path" : "/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.o",
+    "llvm-bc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.bc",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StreakService.o"
+  }
+}

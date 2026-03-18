@@ -1,0 +1,104 @@
+{
+  "source": "/Users/keiju/Desktop/StartShot/StartShot/Features/Settings/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "設定",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "設定を保存できませんでした",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 75
+        }
+      },
+      {
+        "comment": "",
+        "key": "通知",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "デバッグ時刻",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "毎日リマインド",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "通知時刻",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "現在判定時刻: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 40
+        }
+      },
+      {
+        "comment": "",
+        "key": "擬似時刻を使う",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "擬似現在時刻",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "閉じる",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "保存",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 79
+        }
+      }
+    ]
+  },
+  "version": 1
+}

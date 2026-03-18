@@ -1,0 +1,23 @@
+{
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/FullScreenCaptureScaffold.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/FullScreenCaptureScaffold.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningCaptureView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningCaptureView.swiftdeps"
+  },
+  "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningStartConfirmView.swift" : {
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.dia",
+    "object" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.o",
+    "swift-dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/StartShot.build/Debug-iphoneos/StartShot.build/Objects-normal/arm64/MorningStartConfirmView.swiftdeps"
+  }
+}

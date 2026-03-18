@@ -1,0 +1,32 @@
+{
+  "source": "/Users/keiju/Desktop/StartShot/StartShot/Features/Home/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "ストリーク",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld日",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "ミッションを編集",
+        "location": {
+          "startingColumn": 37,
+          "startingLine": 295
+        }
+      }
+    ]
+  },
+  "version": 1
+}

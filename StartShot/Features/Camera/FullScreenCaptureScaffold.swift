@@ -13,18 +13,11 @@ enum CameraCaptureIntent {
         }
     }
 
-    var helperText: String? {
-        switch self {
-        case .nightSetup:
-            return nil
-        case .morningStart:
-            return "絶対やるぞー！"
-        }
-    }
 }
 
 struct FullScreenCaptureScaffold<Preview: View>: View {
     let intent: CameraCaptureIntent
+    let helperText: String?
     let cameraState: CameraSessionState
     let isShutterEnabled: Bool
     let onBack: () -> Void
@@ -47,7 +40,7 @@ struct FullScreenCaptureScaffold<Preview: View>: View {
                 capturePane
                     .padding(.horizontal, 24)
 
-                if let helperText = intent.helperText {
+                if let helperText, !helperText.isEmpty {
                     Text(helperText)
                         .font(.headline)
                         .foregroundStyle(.black)

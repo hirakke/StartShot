@@ -8,6 +8,7 @@ final class RootViewModel {
     var activeFlow: ActiveFlow?
     var pendingNightImage: UIImage?
     var pendingMorningImage: UIImage?
+    var nightSetupTargetDate: Date?
 
     func showSettings() {
         activeFlow = .settings
@@ -16,6 +17,7 @@ final class RootViewModel {
     func handleHomePrimaryAction(status: DailyMissionStatus) {
         switch status {
         case .notConfigured:
+            nightSetupTargetDate = nil
             activeFlow = .nightCapture
         case .readyForToday:
             activeFlow = .morningCapture
@@ -24,10 +26,15 @@ final class RootViewModel {
         }
     }
 
-    func handleConfiguredMissionEdit(status: DailyMissionStatus, configuredImagePath: String?) {
-        guard status == .configuredForTomorrow else {
+    func handleConfiguredMissionEdit(
+        status: DailyMissionStatus,
+        configuredImagePath: String?,
+        targetDate: Date?
+    ) {
+        guard status == .configuredForTomorrow || status == .readyForToday else {
             return
         }
+        nightSetupTargetDate = targetDate
         guard
             let configuredImagePath,
             let image = PhotoFileStore.image(for: configuredImagePath)
@@ -40,7 +47,10 @@ final class RootViewModel {
         activeFlow = .nightSetupConfirm
     }
 
-    func handleNightCapture(_ image: UIImage) {
+    func handleNightCapture(_ image: UIImage, defaultTargetDate: Date) {
+        if nightSetupTargetDate == nil {
+            nightSetupTargetDate = defaultTargetDate
+        }
         pendingNightImage = image
         activeFlow = .nightSetupConfirm
     }
@@ -70,5 +80,6 @@ final class RootViewModel {
     func clearTransientState() {
         pendingNightImage = nil
         pendingMorningImage = nil
+        nightSetupTargetDate = nil
     }
 }

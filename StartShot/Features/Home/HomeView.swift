@@ -12,6 +12,11 @@ private enum HomeLayout {
     static let missionPairImageSize = CGSize(width: 112, height: 144)
 }
 
+private enum MissionActionStyle {
+    case filled(background: Color, foreground: Color)
+    case outline
+}
+
 struct HomeView: View {
     let homeMissionState: HomeMissionState
     let dailyMissionStatus: DailyMissionStatus
@@ -101,10 +106,10 @@ struct MissionSectionView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
-            Text(sectionTitle)
+            Text(sectionTitle)//今日のミッションor明日のミッション
                 .font(.system(size: 24, weight: .bold))
                 .foregroundStyle(.black)
-
+                
             switch homeMissionState {
             case .empty:
                 emptyContent
@@ -141,7 +146,7 @@ struct MissionSectionView: View {
     private var helperText: String {
         switch dailyMissionStatus {
         case .notConfigured:
-            return "まだミッションがありません。明日の朝いちばんにやることを先に決めておきます。"
+            return "まだミッションがありません。明日の朝いちばんにやることを先に決めておきましょう。"
         case .configuredForTomorrow:
             return "明日のスタート地点が保存されています。必要なら撮り直して整えられます。"
         case .readyForToday:
@@ -159,7 +164,7 @@ struct MissionSectionView: View {
                     relativePath: configuredImagePath,
                     size: HomeLayout.missionImageSize,
                     placeholderIcon: dailyMissionStatus == .configuredForTomorrow ? "moon.stars.fill" : "sun.max.fill",
-                    showExternalBadge: dailyMissionStatus == .configuredForTomorrow,
+                    showExternalBadge: showsEditBadge,
                     onExternalBadgeTap: onConfiguredImageEdit
                 )
                 Spacer()
@@ -169,20 +174,7 @@ struct MissionSectionView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            if dailyMissionStatus == .readyForToday {
-                Button(primaryButtonTitle, action: onPrimaryTap)
-                    .buttonStyle(
-                        MissionFilledButtonStyle(
-                            background: Color(red: 0.29, green: 0.71, blue: 0.45),
-                            foreground: .white
-                        )
-                    )
-            } else {
-                Button(primaryButtonTitle, action: onPrimaryTap)
-                    .buttonStyle(MissionOutlineButtonStyle())
-                    .disabled(true)
-                    .opacity(0.55)
-            }
+            primaryActionButton
         }
     }
 
@@ -211,10 +203,7 @@ struct MissionSectionView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            Button(primaryButtonTitle, action: onPrimaryTap)
-                .buttonStyle(MissionFilledButtonStyle(background: .black, foreground: .white))
-                .disabled(true)
-                .opacity(0.55)
+            primaryActionButton
         }
     }
 
@@ -224,15 +213,41 @@ struct MissionSectionView: View {
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
 
-            Button(primaryButtonTitle, action: onPrimaryTap)
-                .buttonStyle(
-                    MissionFilledButtonStyle(
-                        background: Color(red: 0.29, green: 0.71, blue: 0.45),
-                        foreground: .white
-                    )
-                )
+            Spacer()
+            primaryActionButton
+            Spacer()
         }
         .frame(maxWidth: .infinity, alignment: .center)
+    }
+
+    private var showsEditBadge: Bool {
+        dailyMissionStatus == .configuredForTomorrow || dailyMissionStatus == .readyForToday
+    }
+
+    private var isPrimaryActionEnabled: Bool {
+        dailyMissionStatus == .notConfigured || dailyMissionStatus == .readyForToday
+    }
+
+    private var primaryActionStyle: MissionActionStyle {
+        switch dailyMissionStatus {
+        case .notConfigured, .readyForToday:
+            return .outline
+        case .configuredForTomorrow:
+            return .outline
+        case .completedToday:
+            return .filled(background: .black, foreground: .white)
+        }
+    }
+
+    private var primaryActionButton: some View {
+        MissionActionButton(
+            title: primaryButtonTitle,
+            leadingSystemImage: dailyMissionStatus == .notConfigured ? "plus.circle" : nil,
+            trailingSystemImage: dailyMissionStatus == .readyForToday ? "arrow.right" : nil,
+            isEnabled: isPrimaryActionEnabled,
+            style: primaryActionStyle,
+            action: onPrimaryTap
+        )
     }
 }
 
@@ -262,7 +277,10 @@ private struct MissionPreviewCard: View {
             )
 
             if showExternalBadge {
-                Button(action: { onExternalBadgeTap?() }) {
+                Button {
+                    HapticFeedback.selection()
+                    onExternalBadgeTap?()
+                } label: {
                     ZStack {
                         Circle()
                             .fill(Color.black)
@@ -301,36 +319,59 @@ private struct MissionPreviewCard: View {
     }
 }
 
-private struct MissionOutlineButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .font(.system(size: 18, weight: .semibold))
-            .foregroundStyle(.black)
-            .frame(maxWidth: .infinity)
-            .frame(height: HomeLayout.buttonHeight)
-            .background(Color.white)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .stroke(Color.black, lineWidth: 1.5)
+private struct MissionActionButton: View {
+    let title: String
+    let leadingSystemImage: String?
+    let trailingSystemImage: String?
+    let isEnabled: Bool
+    let style: MissionActionStyle
+    let action: () -> Void
+
+    var body: some View {
+        switch style {
+        case .filled(let background, let foreground):
+            Button(action: {
+                HapticFeedback.tap()
+                action()
+            }) {
+                label
+            }
+            .buttonStyle(
+                StartShotFilledButtonStyle(
+                    height: HomeLayout.buttonHeight,
+                    background: background,
+                    foreground: foreground
+                )
             )
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-            .opacity(configuration.isPressed ? 0.85 : 1)
+            .disabled(!isEnabled)
+            .opacity(isEnabled ? 1 : 0.55)
+
+        case .outline:
+            Button(action: {
+                HapticFeedback.tap()
+                action()
+            }) {
+                label
+            }
+            .buttonStyle(StartShotOutlineButtonStyle(height: HomeLayout.buttonHeight))
+            .disabled(!isEnabled)
+            .opacity(isEnabled ? 1 : 0.55)
+        }
     }
-}
 
-private struct MissionFilledButtonStyle: ButtonStyle {
-    let background: Color
-    let foreground: Color
+    @ViewBuilder
+    private var label: some View {
+        HStack(spacing: 8) {
+            if let leadingSystemImage {
+                Image(systemName: leadingSystemImage)
+            }
 
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .font(.system(size: 18, weight: .semibold))
-            .foregroundStyle(foreground)
-            .frame(maxWidth: .infinity)
-            .frame(height: HomeLayout.buttonHeight)
-            .background(background)
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-            .opacity(configuration.isPressed ? 0.88 : 1)
+            Text(title)
+
+            if let trailingSystemImage {
+                Image(systemName: trailingSystemImage)
+            }
+        }
     }
 }
 

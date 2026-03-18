@@ -42,7 +42,8 @@ struct ContentView: View {
                         onConfiguredImageEdit: {
                             viewModel.handleConfiguredMissionEdit(
                                 status: snapshot.dailyStatus,
-                                configuredImagePath: snapshot.tomorrowRecord?.plannedPhotoPath
+                                configuredImagePath: snapshot.configuredImagePath,
+                                targetDate: snapshot.configuredTargetDate
                             )
                         }
                     )
@@ -51,6 +52,7 @@ struct ContentView: View {
                     .toolbar {
                         ToolbarItem(placement: .automatic) {
                             Button {
+                                HapticFeedback.selection()
                                 viewModel.showSettings()
                             } label: {
                                 Image(systemName: "gearshape")
@@ -92,7 +94,7 @@ struct ContentView: View {
             NightCaptureView(
                 onClose: { viewModel.closeFlow() },
                 onCapture: { image in
-                    viewModel.handleNightCapture(image)
+                    viewModel.handleNightCapture(image, defaultTargetDate: snapshot.nextPlanTargetDate)
                 }
             )
 
@@ -103,7 +105,7 @@ struct ContentView: View {
                 initialNotificationHour: snapshot.nextPlanRecord?.notificationHour ?? settingsStore.notificationHour,
                 initialNotificationMinute: snapshot.nextPlanRecord?.notificationMinute ?? settingsStore.notificationMinute,
                 currentDate: timePolicy.now,
-                targetDate: snapshot.nextPlanTargetDate,
+                targetDate: viewModel.nightSetupTargetDate ?? snapshot.nextPlanTargetDate,
                 onClose: { viewModel.closeFlow() },
                 onRetake: { viewModel.retakeNightCapture() },
                 onCompleted: { viewModel.returnHomeAndCloseFlow() }

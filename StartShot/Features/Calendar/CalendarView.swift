@@ -53,6 +53,7 @@ struct CalendarView: View {
                         displayedMonth = Calendar.current.date(byAdding: .month, value: -1, to: displayedMonth) ?? displayedMonth
                     } label: {
                         Image(systemName: "chevron.left")
+                            .foregroundColor(.black)
                     }
 
                     Spacer()
@@ -64,6 +65,7 @@ struct CalendarView: View {
                         displayedMonth = Calendar.current.date(byAdding: .month, value: 1, to: displayedMonth) ?? displayedMonth
                     } label: {
                         Image(systemName: "chevron.right")
+                            .foregroundColor(.black)
                     }
                 }
 
@@ -165,6 +167,10 @@ private struct CalendarDayCell: View {
 
     private let dateService = DateService.shared
 
+    private var isToday: Bool {
+        dateService.isSameDay(date, dateService.startOfDay(for: Date()))
+    }
+
     var body: some View {
         ZStack {
             if let completionImagePath, let image = PhotoFileStore.image(for: completionImagePath), isInDisplayedMonth {
@@ -190,7 +196,7 @@ private struct CalendarDayCell: View {
         .overlay(
             RoundedRectangle(cornerRadius: 14, style: .continuous)
                 .stroke(
-                    dateService.isSameDay(date, selectedDate) ? Color.black : Color.clear,
+                    isToday ? Color.black : Color.clear,
                     lineWidth: 2
                 )
         )

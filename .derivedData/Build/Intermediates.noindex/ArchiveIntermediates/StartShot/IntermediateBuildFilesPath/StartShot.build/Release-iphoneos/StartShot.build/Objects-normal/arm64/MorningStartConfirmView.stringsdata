@@ -1,0 +1,120 @@
+{
+  "source": "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningStartConfirmView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "今日も1日頑張ろう！",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 105
+        }
+      },
+      {
+        "comment": "",
+        "key": "完了できませんでした",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 112
+        }
+      },
+      {
+        "comment": "",
+        "key": "今日も1日頑張ろう！",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld日連続",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "昨日決めた一歩と今朝の一歩を見比べて、今日を始める実感を確定します。",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "今日はすでに達成済みです。",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "このミッションは期限切れです。次のミッションを設定しましょう。",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "撮り直す",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "前夜",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "今朝",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "ホームに戻る",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "1日を始める！",
+        "location": {
+          "startingColumn": 74,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "戻る",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 116
+        }
+      }
+    ]
+  },
+  "version": 1
+}

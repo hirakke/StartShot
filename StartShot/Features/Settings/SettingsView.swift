@@ -57,6 +57,7 @@ struct SettingsView: View {
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
                 Button("閉じる") {
+                    HapticFeedback.selection()
                     dismiss()
                 }
             }
@@ -91,11 +92,13 @@ struct SettingsView: View {
                 try await NotificationService.refreshReminder(using: settingsStore)
                 await MainActor.run {
                     isSaving = false
+                    HapticFeedback.success()
                     dismiss()
                 }
             } catch {
                 await MainActor.run {
                     settingsStore.notificationsEnabled = false
+                    HapticFeedback.error()
                     errorMessage = error.localizedDescription
                     isSaving = false
                 }

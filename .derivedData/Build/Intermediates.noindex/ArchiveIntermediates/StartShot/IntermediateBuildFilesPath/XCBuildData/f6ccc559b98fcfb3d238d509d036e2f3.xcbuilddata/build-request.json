@@ -1,0 +1,86 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "e088f5807855c5a70b41d6872726afdc9192c2c3791dc5c4aca7b562a6531ffe"
+    }
+  ],
+  "containerPath" : "/Users/keiju/Desktop/StartShot/StartShot.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "install",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos26.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Products",
+      "derivedDataPath" : "/Users/keiju/Desktop/StartShot/.derivedData",
+      "indexDataStoreFolderPath" : "/Users/keiju/Desktop/StartShot/.derivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/keiju/Desktop/StartShot/.derivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "CODE_SIGNING_ALLOWED" : "NO"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "install",
+          "ASSET_PACK_FOLDER_PATH" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/InstallationBuildProductsLocation/OnDemandResources",
+          "ASSETCATALOG_COMPILER_FLATTENED_APP_ICON_PATH" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/BuildProductsPath/ProductIcon.png",
+          "DEPLOYMENT_LOCATION" : "YES",
+          "DEPLOYMENT_POSTPROCESSING" : "YES",
+          "DSTROOT" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/InstallationBuildProductsLocation",
+          "EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE" : "NO",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_SIGNATURE_AGGREGATION" : "YES",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "INDEX_ENABLE_DATA_STORE" : "NO",
+          "MESSAGES_APPLICATION_EXTENSION_SUPPORT_FOLDER_PATH" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/BuildProductsPath/MessagesApplicationExtensionSupport",
+          "MESSAGES_APPLICATION_SUPPORT_FOLDER_PATH" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/BuildProductsPath/MessagesApplicationSupport",
+          "OBJROOT" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "SHARED_PRECOMPS_DIR" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/PrecompiledHeaders",
+          "SIGNATURE_METADATA_FOLDER_PATH" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/BuildProductsPath/Signatures",
+          "SWIFT_STDLIB_TOOL_UNSIGNED_DESTINATION_DIR" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/BuildProductsPath/SwiftSupport",
+          "SYMROOT" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/BuildProductsPath",
+          "WATCHKIT_2_SUPPORT_FOLDER_PATH" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/BuildProductsPath/WatchKitSupport2"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "archive",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

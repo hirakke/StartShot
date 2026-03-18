@@ -1,0 +1,88 @@
+{
+  "source": "/Users/keiju/Desktop/StartShot/StartShot/Features/Camera/MorningCaptureView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "撮影できませんでした",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "今日のミッションがありません。",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "前夜に設定したミッションがあるときだけ、朝の開始撮影を実行できます。",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "明日のミッションを設定する",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 86
+        }
+      },
+      {
+        "comment": "",
+        "key": "戻る",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "このミッションは期限切れです。",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "朝ミッションは10:00までに実行します。次のミッションを設定して明日に備えましょう。",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "明日のミッションを設定する",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "戻る",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 111
+        }
+      }
+    ]
+  },
+  "version": 1
+}

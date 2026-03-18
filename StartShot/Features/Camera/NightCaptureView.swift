@@ -12,6 +12,7 @@ struct NightCaptureView: View {
     var body: some View {
         FullScreenCaptureScaffold(
             intent: .nightSetup,
+            helperText: nil,
             cameraState: camera.state,
             isShutterEnabled: camera.state == .running && !isCapturing,
             onBack: onClose,
@@ -44,13 +45,16 @@ struct NightCaptureView: View {
             return
         }
 
+        HapticFeedback.tap()
         isCapturing = true
         camera.capturePhoto { result in
             isCapturing = false
             switch result {
             case .success(let image):
+                HapticFeedback.success()
                 onCapture(image)
             case .failure(let error):
+                HapticFeedback.error()
                 errorMessage = error.localizedDescription
             }
         }

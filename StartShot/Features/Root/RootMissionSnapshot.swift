@@ -20,6 +20,17 @@ struct RootMissionSnapshot {
             return nil
         }
     }
+
+    var configuredTargetDate: Date? {
+        switch dailyStatus {
+        case .configuredForTomorrow:
+            return tomorrowRecord?.targetDate
+        case .readyForToday, .completedToday:
+            return todayRecord?.targetDate
+        case .notConfigured:
+            return nil
+        }
+    }
 }
 
 extension RootMissionSnapshot {

@@ -89,13 +89,15 @@ struct MorningStartConfirmView: View {
                             .frame(maxWidth: .infinity)
                     }
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(Color.black)
+                .buttonStyle(StartShotFilledButtonStyle())
                 .disabled((capturedImage == nil && storedCompletionImagePath == nil) || isSaving || isDeadlinePassed)
 
                 if !isAlreadyCompleted && !isDeadlinePassed {
-                    Button("撮り直す", action: onRetake)
-                        .buttonStyle(.bordered)
+                    Button("撮り直す") {
+                        HapticFeedback.selection()
+                        onRetake()
+                    }
+                        .buttonStyle(StartShotOutlineButtonStyle())
                         .frame(maxWidth: .infinity)
                 }
             }
@@ -106,7 +108,10 @@ struct MorningStartConfirmView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button("戻る", action: onClose)
+                Button("戻る") {
+                    HapticFeedback.selection()
+                    onClose()
+                }
             }
         }
         .alert("完了できませんでした", isPresented: Binding(
@@ -139,6 +144,7 @@ struct MorningStartConfirmView: View {
 
     private func finishMorningStart() {
         if isAlreadyCompleted {
+            HapticFeedback.selection()
             onCompleted()
             return
         }
@@ -158,8 +164,10 @@ struct MorningStartConfirmView: View {
             )
 
             isSaving = false
+            HapticFeedback.success()
             onCompleted()
         } catch {
+            HapticFeedback.error()
             errorMessage = error.localizedDescription
             isSaving = false
         }

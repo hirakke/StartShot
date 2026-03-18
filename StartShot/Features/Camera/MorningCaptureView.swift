@@ -7,6 +7,7 @@ struct MorningCaptureView: View {
     let onClose: () -> Void
     let onGuideToSetup: () -> Void
     let onCapture: (UIImage) -> Void
+    private let plannedReferenceImage: UIImage?
 
     @Environment(AppDateProvider.self) private var dateProvider
 
@@ -25,6 +26,26 @@ struct MorningCaptureView: View {
         )
     }
 
+    private var helperMessage: String? {
+        let trimmedMessage = missionMessage?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        return trimmedMessage.isEmpty ? nil : trimmedMessage
+    }
+
+    init(
+        plannedImagePath: String?,
+        missionMessage: String?,
+        onClose: @escaping () -> Void,
+        onGuideToSetup: @escaping () -> Void,
+        onCapture: @escaping (UIImage) -> Void
+    ) {
+        self.plannedImagePath = plannedImagePath
+        self.missionMessage = missionMessage
+        self.onClose = onClose
+        self.onGuideToSetup = onGuideToSetup
+        self.onCapture = onCapture
+        self.plannedReferenceImage = plannedImagePath.flatMap { PhotoFileStore.image(for: $0) }
+    }
+
     var body: some View {
         if plannedImagePath == nil {
             missingMissionContent
@@ -33,6 +54,7 @@ struct MorningCaptureView: View {
         } else {
             FullScreenCaptureScaffold(
                 intent: .morningStart,
+                helperText: helperMessage,
                 cameraState: camera.state,
                 isShutterEnabled: camera.state == .running && !isCapturing,
                 onBack: onClose,
@@ -41,16 +63,9 @@ struct MorningCaptureView: View {
                 onRetry: camera.retry
             ) {
                 CustomCameraPreview(session: camera.session)
-                    .overlay(alignment: .topTrailing) {
-                        if let missionMessage, !missionMessage.isEmpty {
-                            Text(missionMessage)
-                                .font(.caption.weight(.semibold))
-                                .foregroundStyle(.white)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 8)
-                                .background(.black.opacity(0.56))
-                                .clipShape(Capsule())
-                                .padding(12)
+                    .overlay {
+                        if let plannedReferenceImage {
+                            referenceOverlay(image: plannedReferenceImage)
                         }
                     }
             }
@@ -70,6 +85,27 @@ struct MorningCaptureView: View {
             } message: {
                 Text(errorMessage ?? "")
             }
+        }
+    }
+
+    private func referenceOverlay(image: UIImage) -> some View {
+        ZStack(alignment: .bottomLeading) {
+            Image(uiImage: image)
+                .resizable()
+                .scaledToFit()
+                .opacity(0.26)
+                .padding(28)
+                .allowsHitTesting(false)
+
+            Label("昨夜の設定を重ねて表示中", systemImage: "moon.stars.fill")
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(.white)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 8)
+                .background(.black.opacity(0.56))
+                .clipShape(Capsule())
+                .padding(14)
+                .allowsHitTesting(false)
         }
     }
 
@@ -120,13 +156,16 @@ struct MorningCaptureView: View {
             return
         }
 
+        HapticFeedback.tap()
         isCapturing = true
         camera.capturePhoto { result in
             isCapturing = false
             switch result {
             case .success(let image):
+                HapticFeedback.success()
                 onCapture(image)
             case .failure(let error):
+                HapticFeedback.error()
                 errorMessage = error.localizedDescription
             }
         }

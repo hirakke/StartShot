@@ -1,0 +1,12 @@
+{
+  "/Users/keiju/Desktop/StartShot/StartShot/App/AppTab.swift" : {
+    "abi-baseline-json" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot.abi.json",
+    "const-values" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.swiftconstvalues",
+    "dependencies" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.d",
+    "diagnostics" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-primary.dia",
+    "objc-header" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot-Swift.h",
+    "swiftdoc" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot.swiftdoc",
+    "swiftmodule" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot.swiftmodule",
+    "swiftsourceinfo" : "/Users/keiju/Desktop/StartShot/.derivedData/Build/Intermediates.noindex/ArchiveIntermediates/StartShot/IntermediateBuildFilesPath/StartShot.build/Release-iphoneos/StartShot.build/Objects-normal/arm64/StartShot.swiftsourceinfo"
+  }
+}

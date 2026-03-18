@@ -3,7 +3,7 @@ import SwiftData
 import UIKit
 
 struct NightSetupConfirmView: View {
-    private enum Field {
+    private enum Field: Hashable {
         case message
     }
 
@@ -16,6 +16,7 @@ struct NightSetupConfirmView: View {
     let onClose: () -> Void
     let onRetake: () -> Void
     let onCompleted: () -> Void
+    private let displayImage: UIImage?
 
     @Environment(\.modelContext) private var modelContext
     @Environment(SettingsStore.self) private var settingsStore
@@ -27,6 +28,8 @@ struct NightSetupConfirmView: View {
     @State private var warningMessage: String?
     @State private var isSaving = false
     @FocusState private var focusedField: Field?
+
+    private let dateService = DateService.shared
 
     init(
         capturedImage: UIImage?,
@@ -48,6 +51,7 @@ struct NightSetupConfirmView: View {
         self.onClose = onClose
         self.onRetake = onRetake
         self.onCompleted = onCompleted
+        self.displayImage = Self.makePreviewImage(from: capturedImage, maxDimension: 1200)
 
         _message = State(initialValue: initialMessage)
         _notificationDate = State(
@@ -61,53 +65,44 @@ struct NightSetupConfirmView: View {
 
     var body: some View {
         GeometryReader { proxy in
-            let previewWidth = min(max(proxy.size.width - 72, 220), 340)
-            let previewHeight = min(max(proxy.size.height * 0.34, 180), 300)
+            let maxPreviewWidth = min(max(proxy.size.width - 72, 220), 340)
+            let maxPreviewHeight = min(max(proxy.size.height * 0.34, 180), 300)
+            let imageAspectRatio = previewAspectRatio
+            let fittedSize = fittedPreviewSize(
+                maxWidth: maxPreviewWidth,
+                maxHeight: maxPreviewHeight,
+                aspectRatio: imageAspectRatio
+            )
+            let isEditingMessage = focusedField == .message
 
-            VStack(alignment: .leading, spacing: 16) {
-                Text("設定！")
-                    .font(.system(size: 30, weight: .bold))
-                    .foregroundStyle(.black)
+            ScrollViewReader { scrollProxy in
+                ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text("設定！")
+                            .font(.system(size: 30, weight: .bold))
+                            .foregroundStyle(.black)
 
-                Text("この写真を明日のミッションとして保存します")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                        Text("この写真を明日のミッションとして保存します")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
 
-                HStack {
-                    Spacer()
-                    imagePreview(maxWidth: previewWidth, maxHeight: previewHeight)
-                    Spacer()
-                }
+                        HStack {
+                            Spacer()
+                            imagePreview(width: fittedSize.width, height: fittedSize.height)
+                            Spacer()
+                        }
 
-                HStack {
-                    Text("通知時間")
-                        .font(.headline)
-                    Spacer()
-                    DatePicker(
-                        "通知時間",
-                        selection: $notificationDate,
-                        displayedComponents: .hourAndMinute
-                    )
-                    .datePickerStyle(.compact)
-                    .labelsHidden()
-                }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
-                .background(
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(Color.black.opacity(0.04))
-                )
-
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("明日の自分への一言")
-                        .font(.headline)
-
-                    TextField("まずはこれから始めよう", text: $message)
-                        .textFieldStyle(.plain)
-                        .focused($focusedField, equals: .message)
-                        .submitLabel(.done)
-                        .onSubmit {
-                            focusedField = nil
+                        HStack {
+                            Text("通知時間")
+                                .font(.headline)
+                            Spacer()
+                            DatePicker(
+                                "通知時間",
+                                selection: $notificationDate,
+                                displayedComponents: .hourAndMinute
+                            )
+                            .datePickerStyle(.compact)
+                            .labelsHidden()
                         }
                         .padding(.horizontal, 16)
                         .padding(.vertical, 12)
@@ -115,45 +110,76 @@ struct NightSetupConfirmView: View {
                             RoundedRectangle(cornerRadius: 16, style: .continuous)
                                 .fill(Color.black.opacity(0.04))
                         )
-                }
 
-                Button(action: saveMission) {
-                    if isSaving {
-                        ProgressView()
-                            .tint(.white)
-                            .frame(maxWidth: .infinity)
-                    } else {
-                        Text("完了")
-                            .frame(maxWidth: .infinity)
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("明日の自分への一言")
+                                .font(.headline)
+
+                            TextField("まずはこれから始めよう", text: $message)
+                                .textFieldStyle(.plain)
+                                .focused($focusedField, equals: .message)
+                                .submitLabel(.done)
+                                .onSubmit {
+                                    focusedField = nil
+                                }
+                                .padding(.horizontal, 16)
+                                .padding(.vertical, 12)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                                        .fill(Color.black.opacity(0.04))
+                                )
+                                .id(Field.message)
+                        }
+
+                        Button(action: saveMission) {
+                            if isSaving {
+                                ProgressView()
+                                    .tint(.white)
+                                    .frame(maxWidth: .infinity)
+                            } else {
+                                Text("完了")
+                                    .frame(maxWidth: .infinity)
+                            }
+                        }
+                        .buttonStyle(StartShotFilledButtonStyle())
+                        .disabled(capturedImage == nil || isSaving)
+                        .frame(maxWidth: .infinity)
+
+                        if !isEditingMessage {
+                            HStack {
+                                Spacer()
+                                Button("撮り直す") {
+                                    focusedField = nil
+                                    HapticFeedback.selection()
+                                    onRetake()
+                                }
+                                .buttonStyle(StartShotOutlineButtonStyle())
+                                Spacer()
+                            }
+                        }
+
+                        Spacer(minLength: 0)
                     }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 10)
+                    .padding(.bottom, 16)
+                    .frame(minHeight: proxy.size.height, alignment: .top)
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(Color.black)
-                .font(.headline)
-                .disabled(capturedImage == nil || isSaving)
-                .frame(maxWidth: .infinity)
-
-                HStack {
-                    Spacer()
-                    Button("撮り直す") {
+                .scrollDismissesKeyboard(.interactively)
+                .simultaneousGesture(
+                    TapGesture().onEnded {
                         focusedField = nil
-                        onRetake()
                     }
-                        .buttonStyle(.bordered)
-                    Spacer()
+                )
+                .onChange(of: focusedField) { _, newField in
+                    guard newField == .message else {
+                        return
+                    }
+                    withAnimation(.easeOut(duration: 0.2)) {
+                        scrollProxy.scrollTo(Field.message, anchor: .bottom)
+                    }
                 }
-
-                Spacer(minLength: 0)
             }
-            .padding(.horizontal, 20)
-            .padding(.top, 10)
-            .padding(.bottom, 16)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            .simultaneousGesture(
-                TapGesture().onEnded {
-                    focusedField = nil
-                }
-            )
         }
         .background(Color.white.ignoresSafeArea())
         .navigationTitle("設定！")
@@ -162,6 +188,7 @@ struct NightSetupConfirmView: View {
             ToolbarItem(placement: .topBarLeading) {
                 Button("戻る") {
                     focusedField = nil
+                    HapticFeedback.selection()
                     onClose()
                 }
             }
@@ -195,10 +222,33 @@ struct NightSetupConfirmView: View {
         }
     }
 
-    private func imagePreview(maxWidth: CGFloat, maxHeight: CGFloat) -> some View {
+    private var previewAspectRatio: CGFloat {
+        guard let image = displayImage ?? capturedImage else {
+            return 3.0 / 4.0
+        }
+
+        let width = max(image.size.width, 1)
+        let height = max(image.size.height, 1)
+        return width / height
+    }
+
+    private func fittedPreviewSize(maxWidth: CGFloat, maxHeight: CGFloat, aspectRatio: CGFloat) -> CGSize {
+        let clampedAspectRatio = max(aspectRatio, 0.1)
+        var width = maxWidth
+        var height = width / clampedAspectRatio
+
+        if height > maxHeight {
+            height = maxHeight
+            width = height * clampedAspectRatio
+        }
+
+        return CGSize(width: width, height: height)
+    }
+
+    private func imagePreview(width: CGFloat, height: CGFloat) -> some View {
         Group {
-            if let capturedImage {
-                Image(uiImage: capturedImage)
+            if let image = displayImage ?? capturedImage {
+                Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
             } else {
@@ -210,14 +260,32 @@ struct NightSetupConfirmView: View {
                     }
             }
         }
-        .frame(maxWidth: maxWidth, maxHeight: maxHeight)
-        .frame(width: maxWidth, height: maxHeight)
+        .frame(width: width, height: height)
         .background(Color.black.opacity(0.03))
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .overlay(
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .stroke(Color.black.opacity(0.06), lineWidth: 1)
         )
+    }
+
+    private static func makePreviewImage(from image: UIImage?, maxDimension: CGFloat) -> UIImage? {
+        guard let image else {
+            return nil
+        }
+
+        let original = image.size
+        let longestSide = max(original.width, original.height)
+        guard longestSide > maxDimension, maxDimension > 0 else {
+            return image
+        }
+
+        let scale = maxDimension / longestSide
+        let targetSize = CGSize(width: original.width * scale, height: original.height * scale)
+        let renderer = UIGraphicsImageRenderer(size: targetSize)
+        return renderer.image { _ in
+            image.draw(in: CGRect(origin: .zero, size: targetSize))
+        }
     }
 
     private func saveMission() {
@@ -245,17 +313,21 @@ struct NightSetupConfirmView: View {
                     draft: draft,
                     records: records,
                     modelContext: modelContext,
-                    settingsStore: settingsStore
+                    settingsStore: settingsStore,
+                    dateService: dateService
                 )
                 isSaving = false
                 switch result {
                 case .saved:
                     focusedField = nil
+                    HapticFeedback.success()
                     onCompleted()
                 case .savedWithNotificationWarning(let message):
+                    HapticFeedback.success()
                     warningMessage = message
                 }
             } catch {
+                HapticFeedback.error()
                 errorMessage = error.localizedDescription
                 isSaving = false
             }

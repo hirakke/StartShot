@@ -1,4 +1,4 @@
-import AVFoundation
+@preconcurrency import AVFoundation
 import Combine
 import Foundation
 import UIKit
@@ -35,6 +35,7 @@ final class CameraSessionController: NSObject, ObservableObject {
     let session = AVCaptureSession()
 
     private let photoOutput = AVCapturePhotoOutput()
+    private let photoCaptureDelegate = PhotoCaptureDelegateProxy()
     private let sessionQueue = DispatchQueue(label: "StartShot.CameraSessionQueue")
 
     private var isConfigured = false
@@ -85,9 +86,28 @@ final class CameraSessionController: NSObject, ObservableObject {
             }
 
             self.pendingCaptureHandler = handler
+            self.photoCaptureDelegate.onCapture = { [weak self] result in
+                self?.sessionQueue.async { [weak self] in
+                    guard let self else {
+                        return
+                    }
+
+                    let handler = self.pendingCaptureHandler
+                    self.pendingCaptureHandler = nil
+
+                    DispatchQueue.main.async {
+                        handler?(result)
+                    }
+                }
+            }
             let settings = AVCapturePhotoSettings()
             settings.flashMode = .off
-            self.photoOutput.capturePhoto(with: settings, delegate: self)
+            Task { @MainActor [weak self] in
+                guard let self else {
+                    return
+                }
+                self.photoOutput.capturePhoto(with: settings, delegate: self.photoCaptureDelegate)
+            }
         }
     }
 
@@ -164,7 +184,9 @@ final class CameraSessionController: NSObject, ObservableObject {
     }
 }
 
-extension CameraSessionController: AVCapturePhotoCaptureDelegate {
+private final class PhotoCaptureDelegateProxy: NSObject, AVCapturePhotoCaptureDelegate {
+    var onCapture: ((Result<UIImage, Error>) -> Void)?
+
     func photoOutput(
         _ output: AVCapturePhotoOutput,
         didFinishProcessingPhoto photo: AVCapturePhoto,
@@ -178,17 +200,6 @@ extension CameraSessionController: AVCapturePhotoCaptureDelegate {
         } else {
             result = .failure(CameraSessionError.imageProcessingFailed)
         }
-
-        sessionQueue.async { [weak self] in
-            guard let self else {
-                return
-            }
-            let handler = self.pendingCaptureHandler
-            self.pendingCaptureHandler = nil
-
-            DispatchQueue.main.async {
-                handler?(result)
-            }
-        }
+        onCapture?(result)
     }
 }
