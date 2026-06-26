@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'StartShot' in project 'StartShot' (no dependencies)
